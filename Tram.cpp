@@ -14,13 +14,12 @@ entering passenger enters the tram.*/
 #include<iostream>
 using namespace std;
 int main(){
-	int t,out,in,counter=0,m=0;
+	int t,ai,bi,counter=0,m=0;
 	cin>>t;
 	while(t--){
-		cin>>out>>in;
-//		counter-=out;
-//		counter+=in;
-        counter=counter+(in-out);
+		cin>>ai>>bi;
+		counter-=ai;
+		counter+=bi;
 		if(counter>m){
 			m=counter;
 		}

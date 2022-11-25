@@ -11,12 +11,32 @@ the queue is going to look after t seconds.*/
 //5 1       
 //BGGBG
 //output GBGGB
+//#include<iostream>
+//using namespace std;
+//int main(){
+//	int n,t;
+//	string s;
+//	cin>>n>>t;
+//	cin>>s;
+//	while(t--){
+//		for(int i=0;i<n;i++){
+//			cout<<i;
+//			if(s[i]=='B' && s[i+1]=='G'){
+//				s[i]='G';
+//				s[i+1]='B';
+//				i++;
+//			}
+//		}
+//	}
+//	cout<<s;
+//	return 0;
+//}
 #include<iostream>
 using namespace std;
 int main(){
 	int n,t;
-	string s;
 	cin>>n>>t;
+	string s;
 	cin>>s;
 	while(t--){
 		for(int i=0;i<n;i++){
@@ -25,8 +45,11 @@ int main(){
 				s[i+1]='B';
 				i++;
 			}
+			
 		}
 	}
 	cout<<s;
 	return 0;
 }
+
+

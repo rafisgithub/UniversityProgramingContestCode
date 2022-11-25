@@ -7,22 +7,41 @@ order of natural numbers (natural number is positive integer number). He is dete
  
  //10 3 output 5
  //7 7 output 6
+//#include<iostream>
+//using namespace std;
+//int main(){
+//	long long int n,k,p,ans;
+//	cin>>n>>k;
+//	if(n%2){
+//		p=(n/2)+1;
+//	}else{
+//		p=n/2;
+//	}
+//	if(k<=p){
+//		ans=2*k-1;
+//	}else{
+//		k=k-p;
+//		ans=2*k;
+//	}
+//	cout<<ans;
+//	return 0;
+//}
 #include<iostream>
 using namespace std;
 int main(){
-	long long int n,k,p,ans;
+	int n,k,oddNumberBoundary,result;
 	cin>>n>>k;
 	if(n%2){
-		p=(n/2)+1;
+		oddNumberBoundary=(n/2)+1;
 	}else{
-		p=n/2;
+		oddNumberBoundary=n/2;
 	}
-	if(k<=p){
-		ans=2*k-1;
+	if(k<=oddNumberBoundary){
+		result=2*k-1;
 	}else{
-		k=k-p;
-		ans=2*k;
+		k=k-oddNumberBoundary;
+		result=2*k;
 	}
-	cout<<ans;
+	cout<<result;
 	return 0;
 }
